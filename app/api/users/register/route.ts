@@ -6,7 +6,7 @@ type Register = {
   lastName?: string;
   timezone: string;
 };
-export async function register(req: Register) {
+export const POST = async function register(req: Register) {
   const res = await fetch('http://stg.noctis.riguruku.com/api/v1/user/register', {
     method: 'POST',
     headers: {
@@ -23,4 +23,4 @@ export async function register(req: Register) {
     });
   }
   return res;
-}
+};
