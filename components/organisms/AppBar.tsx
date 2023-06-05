@@ -24,7 +24,7 @@ const AppBar = () => {
       <div className="col-span-3 col-start-3">{session?.user ? <Search /> : <></>}</div>
       {!session?.user && (
         <div className="col-span-2 col-start-11 justify-self-end">
-          <Button variant="ghost" onClick={() => signIn()}>
+          <Button className="font-medium" variant="ghost" onClick={() => signIn()}>
             Login
           </Button>
         </div>
